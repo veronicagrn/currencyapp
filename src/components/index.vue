@@ -34,7 +34,7 @@
               <small class="text-muted">1 {{  baseCur }} = {{ (item.name) }} {{ (item.value) }}</small>
             </div>
 
-            <div class="col-1">
+            <div class="col-2">
               <b-button variant="danger" @click.prevent="remove(index)">(-)</b-button>
             </div>
           </div>
@@ -144,5 +144,8 @@ li {
 }
 a {
   color: #42b983;
+}
+.d-flex {
+  padding: 0;
 }
 </style>
