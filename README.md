@@ -10,19 +10,14 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Build docker
 ```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
+docker build -t currencyapp .
 ```
 
-### Lints and fixes files
+### Run docker
 ```
-npm run lint
+docker run -it -p 8080:8080 --rm --name currencyapp1 currencyapp
 ```
 
 ### Customize configuration
